@@ -6,5 +6,8 @@
   <form method="POST">{% csrf_token %}
     {{ form | crispy }}
     <button type="submit" class="btn btn-success ml-2">Log In</button>
+    <a href="{% url 'password_reset' %}" class="form-text">forget your password</a>
   </form>
+  
+  <p> </p>
 {% endblock %}

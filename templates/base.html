@@ -13,7 +13,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}">Newspaper App</a>
+        <a class="navbar-brand" href="{% url 'article_list' %}">Newspaper App</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,7 +29,7 @@
           <ul class="navbar-nav me-auto">
           {% if user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link" href="">+ New</a>
+                <a class="nav-link" href="{% url 'article_new' %}">+ New</a>
               </li>
             </ul>
             <div class="dropdown text-end">
